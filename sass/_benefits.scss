@@ -1,0 +1,58 @@
+.benefit {
+  margin-top: 27.84px;
+  text-align: center;
+
+  &__title {
+    @include font($title-font-size, $title-color, 600);
+    text-transform: capitalize;
+    
+    margin-bottom: 5.57px;
+  }
+
+  &__text {
+    @include font($base-font-size, $main-color);
+    margin-bottom: 11px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Cards
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+
+    &-card {
+      flex-basis: 174px;
+      box-shadow: 0px 1.392px 2.784px 0px rgba(171, 190, 209, 0.20);
+    }
+  }
+}
+
+.card {
+  &__img {
+    position: relative;
+    &::after {
+      content: '';
+      background-color: #E8F5E9;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px 3px 6px 3px;
+      position: absolute;
+      left: 45%;
+      top: 10%;
+      z-index: -1;
+    }
+  }
+  &__title {
+    @include  font(19.49px, $title-color, 700);
+    line-height: 1.2;
+    margin-bottom: 5.57px;
+  }
+  &__info {
+    @include font($base-font-size, $main-color);
+    line-height: 1.5;
+  }
+}

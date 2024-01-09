@@ -1,0 +1,37 @@
+// Шрифты с google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// Настройка переменных
+@import 'variable';
+// Стилизация меню (навигации) и шапки
+@import 'header';
+// Секция логотипы клиентов
+@import 'benefits';
+
+// Общие Стилизации
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: #4CAF4F;
+  color: $white;
+  padding: $btn-padding;
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  font-size: 11.137px;
+  color: #4D4D4D;
+  font-weight: 500;
+}
+.nav__item:hover {
+  text-decoration: underline;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.header__main {
+  background-color: #F5F7FA;
+}
+.header__main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 66.82px 0;
+}
+.header .highlight {
+  color: #4CAF4F;
+}
+.header__info {
+  max-width: 500px;
+}
+.header__title {
+  font-size: 44.548px;
+  color: #4D4D4D;
+  font-weight: 600;
+}
+.header__text {
+  font-size: 11.137px;
+  color: #717171;
+  font-weight: 400;
+  margin: 22.27px 0;
+}
+.header__btn {
+  display: inline-block;
+}
+.header__img {
+  width: 30%;
+}
+
+.benefit {
+  margin-top: 27.84px;
+  text-align: center;
+}
+.benefit__title {
+  font-size: 25.09px;
+  color: #4D4D4D;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5.57px;
+}
+.benefit__text {
+  font-size: 9.745px;
+  color: #717171;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+.benefit__logos {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit__cards-card {
+  flex-basis: 174px;
+  box-shadow: 0px 1.392px 2.784px 0px rgba(171, 190, 209, 0.2);
+}
+
+.card__img {
+  position: relative;
+}
+.card__img::after {
+  content: "";
+  background-color: #E8F5E9;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px 3px 6px 3px;
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  z-index: -1;
+}
+.card__title {
+  font-size: 19.49px;
+  color: #4D4D4D;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5.57px;
+}
+.card__info {
+  font-size: 9.745px;
+  color: #717171;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #4CAF4F;
+  color: #fff;
+  padding: 9.74px 22.27px;
+}/*# sourceMappingURL=style.css.map */

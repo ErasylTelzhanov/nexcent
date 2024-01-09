@@ -1,0 +1,25 @@
+// Font colors
+$main-color: #717171;
+$title-color: #4D4D4D;
+$blue-dark: #263238;
+$white: #fff;
+
+// Background colors
+$green: #4CAF4F;
+$bg-color: #F5F7FA;
+
+// Font sizes
+$base-font-size: 9.745px;
+$secondary-font-size: 11.137px;
+$title-font-size: 25.09px;
+$mainTitle-font-size: 44.548px;
+
+// Block sizes
+$btn-padding: 9.74px 22.27px;
+
+// Mixins
+@mixin font($size, $color, $weight: 400) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
