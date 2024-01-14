@@ -1,0 +1,34 @@
+.statistic {
+  background-color: $bg-color;
+  &__title {
+    @include font($title-font-size, $title-color, 600);
+  }
+  &__subtitle {
+    @include font($secondary-font-size, $dark)
+  }
+  .highlight {
+    color: $green;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20.8px 27.84px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__count {
+    @include font(19.49px, $title-color, 700)
+  }
+  &__text {
+    @include font($secondary-font-size, $main-color)
+  }
+}
+
+.statistic .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44.55px 0;
+}
