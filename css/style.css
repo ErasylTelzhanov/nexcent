@@ -75,11 +75,15 @@
   font-size: 9.745px;
   color: #717171;
   font-weight: 400;
-  margin-bottom: 11px;
+  margin-bottom: 11.14px;
 }
 .benefit__logos {
   display: flex;
   justify-content: space-between;
+}
+.benefit__info {
+  max-width: 460px;
+  text-align: left;
 }
 .benefit__cards {
   display: flex;
@@ -118,6 +122,19 @@
   line-height: 1.5;
 }
 
+.benefit-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 42px;
+}
+.benefit-bottom .benefit__title {
+  margin-bottom: 11.14px;
+}
+.benefit-bottom .benefit__text {
+  margin-bottom: 22.27px;
+}
+
 *,
 *::after,
 *::before {
@@ -148,4 +165,7 @@ body {
   background-color: #4CAF4F;
   color: #fff;
   padding: 9.74px 22.27px;
+  font-size: 11.137px;
+  color: #fff;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

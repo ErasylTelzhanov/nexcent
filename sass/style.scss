@@ -34,4 +34,5 @@ body {
   background-color: #4CAF4F;
   color: $white;
   padding: $btn-padding;
+  @include font($secondary-font-size, $white, 500);
 }

@@ -17,6 +17,10 @@ $mainTitle-font-size: 44.548px;
 // Block sizes
 $btn-padding: 9.74px 22.27px;
 
+// Padding size
+$padding-s: 11.14px;
+$padding-l: 22.27px;
+
 // Mixins
 @mixin font($size, $color, $weight: 400) {
   font-size: $size;

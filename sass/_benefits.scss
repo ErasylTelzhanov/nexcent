@@ -11,7 +11,7 @@
 
   &__text {
     @include font($base-font-size, $main-color);
-    margin-bottom: 11px;
+    margin-bottom: $padding-s;
   }
 
   &__logos {
@@ -19,7 +19,11 @@
     justify-content: space-between;
   }
 
-  // Cards
+  &__info {
+    max-width: 460px;
+    text-align: left;
+  }
+// ***Cards***
   &__cards {
     display: flex;
     justify-content: space-between;
@@ -54,5 +58,21 @@
   &__info {
     @include font($base-font-size, $main-color);
     line-height: 1.5;
+  }
+}
+
+.benefit-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 42px;
+
+  .benefit {
+    &__title {
+      margin-bottom: $padding-s;
+    }
+    &__text {
+      margin-bottom: $padding-l;
+    }
   }
 }
