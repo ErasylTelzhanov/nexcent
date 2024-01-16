@@ -8,6 +8,8 @@
 @import 'benefits';
 // Секция статистики
 @import 'statistic';
+// Секция покупатель
+@import 'customer';
 
 // Общие Стилизации
 *,
@@ -29,12 +31,19 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1040px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+.highlight {
+  color: $green;
 }
 .btn {
   background-color: #4CAF4F;
   color: $white;
   padding: $btn-padding;
   @include font($secondary-font-size, $white, 500);
+}
+section {
+  margin: $margin-section 0;
 }

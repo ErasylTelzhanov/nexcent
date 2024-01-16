@@ -1,0 +1,40 @@
+.customer {
+  background-color: $bg-color;
+  padding: $padding-l 0;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 520px;
+  }
+  &__img {
+    width: 227px;
+    height: 227px;
+    object-fit: cover;
+    border-radius: 5.57px;
+  }
+  &__text {
+    @include font($secondary-font-size, $main-color, 500)
+  }
+  &__author {
+    font-size: 13.921px;
+    font-weight: 600;
+  }
+  &__profession {
+    @include font($secondary-font-size, #89939E)
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 28.54px;
+  }
+  &__all-customers {
+    font-size: 13.921px;
+    font-weight: 600;
+  }
+}
+.customer .container {
+  display: flex;
+  justify-content: space-between;
+}
