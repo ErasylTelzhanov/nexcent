@@ -1,0 +1,50 @@
+.community {
+  &__title {
+    @include font($title-font-size, $title-color, 600);
+    text-align: center;
+  }
+  &__description {
+    @include font($secondary-font-size, $main-color);
+    width: 437px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__card-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 16.71px;
+    margin-top: $padding-s;
+  }
+  &__card {
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    border-radius: $border-rad;
+  }
+
+  &__overlay {
+    background-color: $bg-color;
+    text-align: center;
+    width: calc(100% - 40px);
+    padding: $padding-s;
+    font-size: 13.921px;
+    font-weight: 600;
+    position: absolute;
+    top: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 5.569px 11.137px 0px rgba(171, 190, 209, 0.40);
+    border-radius: $border-rad;
+  }
+}
+
+.overlay {
+  &__description {
+    margin-bottom: $padding-s;
+  }
+}

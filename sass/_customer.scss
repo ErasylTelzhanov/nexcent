@@ -12,7 +12,7 @@
     width: 227px;
     height: 227px;
     object-fit: cover;
-    border-radius: 5.57px;
+    border-radius: $border-rad;
   }
   &__text {
     @include font($secondary-font-size, $main-color, 500)
