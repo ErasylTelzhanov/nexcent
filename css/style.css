@@ -254,7 +254,7 @@
 .community__overlay {
   background-color: #F5F7FA;
   text-align: center;
-  width: calc(100% - 40px);
+  width: calc(100% - 50px);
   padding: 11.14px;
   font-size: 13.921px;
   font-weight: 600;
@@ -270,6 +270,22 @@
 
 .overlay__description {
   margin-bottom: 11.14px;
+}
+
+.subscription {
+  padding: 22.27px 0;
+  background-color: #F5F7FA;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.subscription__title {
+  font-size: 44.548px;
+  color: #263238;
+  font-weight: 600;
+  max-width: 617px;
+  margin: 0 auto;
+  margin-bottom: 22.27px;
 }
 
 *,

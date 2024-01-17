@@ -1,0 +1,12 @@
+.subscription {
+  padding: $padding-l 0;
+  background-color: $bg-color;
+  text-align: center;
+  margin-top: 100px;
+}
+.subscription__title {
+  @include font($mainTitle-font-size, $blue-dark, 600);
+  max-width: 617px;
+  margin: 0 auto;
+  margin-bottom: $padding-l;
+}
