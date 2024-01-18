@@ -288,6 +288,77 @@
   margin-bottom: 22.27px;
 }
 
+.subscription .btn {
+  display: inline-block;
+}
+
+.footer {
+  background-color: #263238;
+  padding: 44.55px 0;
+  color: #F5F7FA;
+}
+.footer__copyright {
+  font-size: 9.745px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__nav {
+  display: flex;
+  gap: 20.88px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8.35px;
+}
+.nav__link {
+  font-size: 9.745px;
+  color: #F5F7FA;
+  font-weight: 400;
+}
+.nav__title {
+  margin-bottom: 16.71px;
+  font-size: 13.921px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.email__title {
+  font-size: 13.921px;
+  color: #fff;
+  font-weight: 600;
+}
+.email__input {
+  display: flex;
+  align-items: center;
+  background-color: #515B60;
+  padding: 7px;
+  margin-top: 16.71px;
+  border-radius: 5.569px;
+}
+
+input[type=email] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 9.745px;
+  color: #D9DBE1;
+  font-weight: 400;
+}
+
+input[type=email]::placeholder {
+  color: #D9DBE1;
+}
+
 *,
 *::after,
 *::before {
@@ -311,8 +382,8 @@ body {
 
 .container {
   max-width: 1040px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .highlight {

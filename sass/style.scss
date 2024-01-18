@@ -14,6 +14,8 @@
 @import 'community';
 // Секция подписки
 @import 'subscription';
+// Секция подвал
+@import 'footer';
 
 // Общие Стилизации
 *,
@@ -36,8 +38,8 @@ body {
 }
 .container {
   max-width: 1040px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 .highlight {
   color: $green;

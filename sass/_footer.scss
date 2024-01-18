@@ -1,0 +1,62 @@
+.footer {
+  background-color: $blue-dark;
+  padding: 44.55px 0;
+  color: $gray;
+
+  &__copyright {
+    font-size: $base-font-size;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    gap: 20.88px;
+  }
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8.35px;
+  }
+  &__link {
+    @include font($base-font-size, $gray)
+  }
+  &__title {
+    margin-bottom: 16.71px;
+    @include font(13.921px, $white, 600)
+  }
+}
+
+.email {
+  &__title {
+    @include font(13.921px, $white, 600)
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    background-color: #515B60;
+    padding: 7px;
+    margin-top: 16.71px;
+    border-radius: $border-rad;
+  }
+}
+
+input[type=email] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  @include font($base-font-size, #D9DBE1)
+}
+input[type=email]::placeholder {
+  color: #D9DBE1;
+}
