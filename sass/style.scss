@@ -53,3 +53,8 @@ body {
 section {
   margin: $margin-section 0;
 }
+html {
+  @include mediaMobile {
+    font-size: 12px;
+  }
+}

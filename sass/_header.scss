@@ -5,6 +5,7 @@
   padding: 11px 0;
 }
 
+// Navigation
 .nav {
   &__logo {
     display: flex;
@@ -16,33 +17,96 @@
     justify-content: space-between;
     align-items: center;
     gap: 1em;
+    transition: all 0.3s;
     @include font($secondary-font-size, $title-color, 500);
+
+    @include mediaMobile {
+      display: none;
+    }
   }
 
   &__item {
     &:hover {
       text-decoration: underline;
     }
+
+    &.btn {
+      @include mediaMobile {
+        font-size: $title-font-size;
+        padding: 3px 1rem;
+      }
+    }
+  }
+
+  &-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    transition: all 0.3s;
+
+    @include mediaMobile {
+      display: flex;
+    }
   }
 }
 
-.btn {
-  &:hover {
-    text-decoration: none;
+.nav-mobile--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  background-color: #fff;
+  font-size: $title-font-size;
+  z-index: 1;
+  transform: translate(0);
+  box-shadow: 0 0 7px rgba(171, 190, 209, 0.20);
+}
+
+.line {
+  display: block;
+  background-color: $dark;
+  width: 20px;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.nav-btn--active {
+  display: block;
+  position: absolute;
+  right: 50px;
+  z-index: 2;
+
+  .line-1 {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .line-3 {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+  .line-2 {
+    display: none;
   }
 }
 
 // Header
 .header {
-  &__main { 
-    background-color: $bg-color; 
+  &__main {
+    background-color: $bg-color;
 
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 66.82px 0;
-      // gap: 200px;
     }
   }
 

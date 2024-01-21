@@ -15,16 +15,79 @@
   justify-content: space-between;
   align-items: center;
   gap: 1em;
+  transition: all 0.3s;
   font-size: 11.137px;
   color: #4D4D4D;
   font-weight: 500;
 }
+@media screen and (max-width: 650px) {
+  .nav__items {
+    display: none;
+  }
+}
 .nav__item:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 650px) {
+  .nav__item.btn {
+    font-size: 25.09px;
+    padding: 3px 1rem;
+  }
+}
+.nav-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 650px) {
+  .nav-btn {
+    display: flex;
+  }
+}
 
-.btn:hover {
-  text-decoration: none;
+.nav-mobile--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  background-color: #fff;
+  font-size: 25.09px;
+  z-index: 1;
+  transform: translate(0);
+  box-shadow: 0 0 7px rgba(171, 190, 209, 0.2);
+}
+
+.line {
+  display: block;
+  background-color: #18191F;
+  width: 20px;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.nav-btn--active {
+  display: block;
+  position: absolute;
+  right: 50px;
+  z-index: 2;
+}
+.nav-btn--active .line-1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.nav-btn--active .line-3 {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+.nav-btn--active .line-2 {
+  display: none;
 }
 
 .header__main {
@@ -401,4 +464,10 @@ body {
 
 section {
   margin: 33.41px 0;
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
