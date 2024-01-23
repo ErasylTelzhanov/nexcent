@@ -9,6 +9,10 @@
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
+
+    @include mediaMobile {
+      width: 100%;
+    }
   }
 
   &__card-content {
@@ -16,9 +20,17 @@
     justify-content: space-between;
     gap: 16.71px;
     margin-top: $padding-s;
+
+    @include mediaMobile {
+      flex-direction: column;
+    }
   }
   &__card {
     position: relative;
+
+    @include mediaMobile {
+      margin-bottom: 40px;
+    }
   }
   &__img {
     width: 100%;
@@ -30,8 +42,6 @@
     text-align: center;
     width: calc(100% - 50px);
     padding: $padding-s;
-    font-size: 13.921px;
-    font-weight: 600;
     position: absolute;
     top: 75%;
     margin-left: auto;
@@ -40,6 +50,13 @@
     left: 0;
     box-shadow: 0px 5.569px 11.137px 0px rgba(171, 190, 209, 0.40);
     border-radius: $border-rad;
+
+    @include font(0.87rem, $main-color, 600);
+
+    @include mediaMobile {
+      top: 90%;
+      width: calc(100% - 150px);
+    }
   }
 }
 

@@ -7,12 +7,22 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 520px;
+
+    @include mediaTablet {
+      max-width: 100%;
+      gap: 1rem;
+    }
   }
   &__img {
     width: 227px;
     height: 227px;
     object-fit: cover;
     border-radius: $border-rad;
+
+    @include mediaTablet {
+      width: 100px;
+      height: 100px;
+    }
   }
   &__text {
     @include font($secondary-font-size, $main-color, 500)
@@ -27,14 +37,34 @@
   &__logos {
     display: flex;
     align-items: center;
-    gap: 28.54px;
+    flex-wrap: wrap;
+    // column-gap: 28.54px;
+    // row-gap: 10px;
+    gap: 10px 28.54px;
   }
+
+  &__logo {
+    @include mediaMobile {
+      width: 20px;
+    }
+  }
+  
   &__all-customers {
     font-size: 13.921px;
     font-weight: 600;
+
+    @include mediaMobile {
+      font-size: 10px;
+    }
   }
 }
 .customer .container {
   display: flex;
   justify-content: space-between;
+  
+  @include mediaTablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }

@@ -19,6 +19,12 @@
     justify-content: space-between;
   }
 
+  &__img {
+    @include mediaMobile {
+      width: 230px;
+    }
+  }
+
   &__info {
     max-width: 460px;
     text-align: left;
@@ -28,10 +34,20 @@
     display: flex;
     justify-content: space-between;
 
+    @include mediaMobile {
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
     &-card {
-      flex-basis: 174px;
+      width: 174px;
       box-shadow: 0px 1.392px 2.784px 0px rgba(171, 190, 209, 0.20);
       padding: $padding-l;
+
+      @include mediaMobile {
+        width: 270px;
+      }
     }
   }
 }
@@ -75,5 +91,9 @@
     &__text {
       margin-bottom: $padding-l;
     }
+  }
+
+  @include mediaMobile {
+    flex-direction: column;
   }
 }

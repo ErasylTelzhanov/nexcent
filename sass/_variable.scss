@@ -11,10 +11,10 @@ $green: #4CAF4F;
 $bg-color: #F5F7FA;
 
 // Font sizes
-$base-font-size: 9.745px; // 0.609rem - 9.745px
-$secondary-font-size: 11.137px; //  0.696rem - 11.137px
-$title-font-size: 25.09px; // 1.568rem - 25.09px
-$mainTitle-font-size: 44.548px; // 2.784rem - 44.548px
+$base-font-size: 0.609rem; // 0.609rem - 9.745px
+$secondary-font-size: 0.696rem; //  0.696rem - 11.137px
+$title-font-size: 1.568rem; // 1.568rem - 25.09px
+$mainTitle-font-size: 2.784rem; // 2.784rem - 44.548px
 
 // Block sizes
 $btn-padding: 9.74px 22.27px; // 0.609rem 1.391rem - 9.74px 22.27px
@@ -29,6 +29,7 @@ $border-rad: 5.569px; // 0.348rem - 5.569px
 
 // Device size
 $mobile: 650px;
+$tablet: 850px;
 
 // Mixins
 @mixin font($size, $color, $weight: 400) {
@@ -39,6 +40,20 @@ $mobile: 650px;
 
 @mixin mediaMobile {
   @media screen and (max-width:$mobile) {
-    @content
+    @content;
   }
 }
+
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mediaSmallM {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+// 0,87 - 13.921px

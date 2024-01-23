@@ -20,6 +20,12 @@
 .footer .container {
   display: flex;
   justify-content: space-between;
+
+  @include mediaSmallM {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .nav {
